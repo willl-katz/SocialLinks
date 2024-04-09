@@ -1,0 +1,33 @@
+$body-bg-color: #FAF7FD;
+$purple: #BB99DD;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: $body-bg-color;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.page-wrap {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}

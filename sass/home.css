@@ -1,0 +1,170 @@
+/* ----------------------- Reset ------------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #FAF7FD;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.page-wrap {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ----------------------- Links ------------------------ */
+.perfil .container .page-wrap {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 33px;
+}
+.perfil .container .page-wrap .perfil-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.perfil .container .page-wrap .perfil-head .perfil-image {
+  width: 213px;
+  height: 213px;
+  overflow: hidden;
+  border-radius: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #BB99DD;
+}
+.perfil .container .page-wrap .perfil-head .perfil-image img {
+  width: 165px;
+  height: 165px;
+  border-radius: 1000px;
+  transform: scale(1.2);
+  transform-origin: bottom bottom;
+}
+.perfil .container .page-wrap .perfil-head a {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #BB99DD;
+  transition: 0.1s ease;
+}
+.perfil .container .page-wrap .perfil-head a:hover {
+  transform: scale(1.2);
+}
+.perfil .container .page-wrap .perfil-links {
+  display: flex;
+  flex-direction: column;
+  gap: 68px;
+}
+.perfil .container .page-wrap .perfil-links .list-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.perfil .container .page-wrap .perfil-links .list-buttons .model-link {
+  padding: 12px 138px;
+  border: 2px solid #BB99DD;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #BB99DD;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.perfil .container .page-wrap .perfil-links .list-rs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 29px;
+}
+.perfil .container .page-wrap .perfil-links .list-rs a {
+  transition: 0.1s ease;
+}
+.perfil .container .page-wrap .perfil-links .list-rs a:hover {
+  transform: scale(1.2);
+}
+
+.container-pop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: position 1s ease;
+          animation: position 1s ease;
+}
+@-webkit-keyframes position {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 0;
+  }
+}
+@keyframes position {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 0;
+  }
+}
+.container-pop .box-pop {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  max-height: 400px;
+  background-color: white;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 48px;
+}
+.container-pop .box-pop .close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  cursor: pointer;
+}
+.container-pop .box-pop h1 {
+  font-size: 4.4rem;
+}
+.container-pop.closed {
+  display: none;
+}
+
+.model-link {
+  padding: 12px 138px;
+  border: 2px solid #BB99DD;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #BB99DD;
+  border-radius: 4px;
+  text-transform: uppercase;
+}/*# sourceMappingURL=home.css.map */
